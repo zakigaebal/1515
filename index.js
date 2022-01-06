@@ -8,13 +8,18 @@ let adds = n1 + n2;
 
 function Game() {
   var user = document.getElementById("intext2").value;
-  var ans = document.getElementById("ans").value;
 
   if (user == adds) {
     document.getElementById("ans").innerHTML = "정답입니다!";
+    setTimeout(function () {
+      document.getElementById("ans").innerHTML = "";
+    }, 1000);
   } else {
     document.getElementById("ans").innerHTML =
       "정답은 " + adds + " 다시해보세요";
+    setTimeout(function () {
+      document.getElementById("ans").innerHTML = "";
+    }, 1000);
   }
 
   if (user == adds) {

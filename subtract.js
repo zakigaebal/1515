@@ -12,9 +12,6 @@ function Game() {
   if (user == subtract) {
     document.getElementById("ans").innerHTML = "잘했어요!";
     document.getElementById("ans").style.color = "blue";
-    setTimeout(function () {
-      $("#target").empty();
-    }, 1000);
   } else {
     document.getElementById("ans").innerHTML =
       "정답은 " + subtract + " 다시해보세요";
