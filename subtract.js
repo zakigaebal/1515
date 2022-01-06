@@ -1,6 +1,5 @@
 let n1 = Math.floor(Math.random() * 100, 10);
 let n2 = Math.floor(Math.random() * 100, 10);
-const audio = document.getElementById("myAudio");
 
 document.getElementById("intext").value = n1;
 document.getElementById("intext1").value = n2;
@@ -16,7 +15,6 @@ function Game() {
   } else {
     document.getElementById("ans").innerHTML =
       "Correct Answer " + subtract + " . Try Again";
-    audio.play();
   }
 
   if (user == subtract) {
@@ -29,14 +27,4 @@ function Game() {
 
     subtract = n1 - n2;
   }
-}
-
-function generate_equation() {
-  n1 = Math.floor(Math.random() * 100, 10);
-  n2 = Math.floor(Math.random() * 100, 10);
-
-  document.getElementById("intext").value = n1;
-  document.getElementById("intext1").value = n2;
-
-  subtract = n1 - n2;
 }

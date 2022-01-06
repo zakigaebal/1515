@@ -7,28 +7,25 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>빼기</title>
+    <title>수학 퀴즈</title>
+  
     <!-- Css Link -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <audio id="myAudio">
-      <source src="wrong.mp3" type="audio/mpeg" />
-    </audio>
-
     <header>
       <div class="container">
         <div class="nav">
           <h2>
-            <span><i class="fa fa-trophy" aria-hidden="true"></i></span> MATH 4
-            KIDS
+            <span><i class="fa fa-trophy" aria-hidden="true"></i></span>
+            사칙연산 퀴즈
           </h2>
           <nav>
             <ul>
-              <li class="current"><a href="index.html">Add</a></li>
-              <li class="multiply"><a href="subtract.html">Subtract</a></li>
-              <li><a href="multiply.html">Multiply</a></li>
-              <li><a href="divide.html">Divide</a></li>
+              <li><a href="index.html">더하기</a></li>
+              <li class="current"><a href="subtract.html">빼기</a></li>
+              <li><a href="multiply.html">곱하기</a></li>
+              <li><a href="divide.html">나누기</a></li>
             </ul>
           </nav>
         </div>
@@ -38,15 +35,25 @@
     <div class="main-container">
       <div class="main">
         <!-- Heading -->
-        <h1>수학 <span>퀴즈</span></h1>
+        <h1>수학퀴즈 <span> 사칙연산공부하기</span></h1>
+        <!-- text input -->
+   <br />
+
+   <p>연산을 선택하세요</p>
+   <div id="moem">
+     <button class="btn" type="button" onclick="location.href='index.html' ">+</button>
+     <button class="btn" type="button" onclick="location.href='subtract.html' ">-</button>
+     <button class="btn" type="button" onclick="location.href='multiply.html' ">X</button>
+     <button class="btn" type="button" onclick="location.href='divide.html' ">/</button>
+   </div>
 
         <!-- Main Box -->
         <div class="main-box">
-          <div class="show-anwser"><span id="ans"></span></div>
+          <div class="show-anwser"></span></div>
 
           <div class="box1">
             <div class="box-col">
-              <input type="textf" id="intext" class="intext11" />
+              <input type="textf" id="intext" class="intext11" readonly/>
             </div>
 
             <div class="add-s">
@@ -54,7 +61,7 @@
             </div>
 
             <div class="box-col">
-              <input type="textf" id="intext1" class="intext11" />
+              <input type="textf" id="intext1" class="intext11" readonly/>
             </div>
           </div>
 
@@ -65,18 +72,20 @@
 
           <!-- button -->
           <div class="box2">
-            <button class="btn" onclick="Game()">Check Anwser</button>
+            <button class="btn" onclick="Game()">확인해보기</button>
           </div>
-
           <div class="box2">
             <button class="btn" onclick="generate_equation()">
               다른문제 풀기
             </button>
           </div>
         </div>
+        <p>정답확인</p>
+        <div class="show-anwser"><span id="ans"></span></div>
       </div>
     </div>
 
     <script src="subtract.js"></script>
+    <script src="event.js"></script>
   </body>
 </html>

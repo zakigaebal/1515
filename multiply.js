@@ -15,7 +15,6 @@ function Game() {
   } else {
     document.getElementById("ans").innerHTML =
       "Correct Answer " + multiply + " . Try Again";
-    audio.play();
   }
 
   var user = (document.getElementById("intext2").value = "");
