@@ -10,11 +10,10 @@ function Game() {
   var user = document.getElementById("intext2").value;
 
   if (user == multiply) {
-    document.getElementById("ans").innerHTML =
-      "Well Done! Your Answer is Correct";
+    document.getElementById("ans").innerHTML = "정답입니다!";
   } else {
     document.getElementById("ans").innerHTML =
-      "Correct Answer " + multiply + " . Try Again";
+      "정답은 " + multiply + " 다시해보세요";
   }
 
   var user = (document.getElementById("intext2").value = "");

@@ -10,12 +10,10 @@ function Game() {
   var user = document.getElementById("intext2").value;
 
   if (user == divide) {
-    document.getElementById("ans").innerHTML =
-      "Well Done! Your Answer is Correct";
+    document.getElementById("ans").innerHTML = "정답입니다!";
   } else {
     document.getElementById("ans").innerHTML =
-      "Correct Answer " + divide + " . Try Again";
-    audio.play();
+      "정답은 " + divide + "  다시 적어주세요:)";
   }
 
   var user = (document.getElementById("intext2").value = "");

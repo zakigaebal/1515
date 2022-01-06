@@ -130,10 +130,6 @@ nav a {
   }
 }
 
-p {
-  font-size: 30px;
-}
-
 @media (max-width: 480px) {
   .nav h2 {
     float: none;
@@ -171,19 +167,6 @@ input {
 
 .box1 {
   display: flex;
-}
-
-.intext11 {
-  width: 76px;
-  font-size: 20px;
-  font-weight: 600;
-  height: 55px;
-  padding: 0px 10px;
-  text-align: center;
-  border: none;
-  background: #fff;
-  box-shadow: 1px 1px 0px #999, 2px 2px 0px #999, 3px 2px 0px #999,
-    4px 4px 0px #999, 5px 5px 0px #999;
 }
 
 .add-s {
@@ -227,22 +210,13 @@ p {
   display: flex;
 }
 
-.intext11 {
-  width: 76px;
-  font-size: 20px;
-  font-weight: 600;
-  height: 55px;
-  padding: 0px 10px;
-  text-align: center;
-  border: none;
-  background: #fff;
-  box-shadow: 1px 1px 0px #999, 2px 2px 0px #999, 3px 2px 0px #999,
-    4px 4px 0px #999, 5px 5px 0px #999;
-}
-
 .add-s {
   margin: 13px 20px 12px 21px;
   font-size: 25px;
+}
+
+.bigsize {
+  font-size: 50px;
 }
 
 span {
@@ -267,7 +241,7 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
+  padding: 30px;
 }
 
 body {
@@ -333,11 +307,8 @@ input {
   border: none;
   font-size: 16px;
   color: #fff;
-  background: #fb6868;
-  box-shadow: 1px 1px 0px #999, 2px 2px 0px #999, 3px 2px 0px #999,
-    4px 4px 0px #999, 5px 5px 0px #999;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  background: #000000;
+  border-radius: 6px;
 }
 
 header {
@@ -345,7 +316,8 @@ header {
 }
 
 .intext11 {
-  width: 76px;
+  width: 100px;
+  height: 80px;
   margin: 5px;
   font-size: 20px;
   font-weight: 600;
@@ -354,8 +326,7 @@ header {
   text-align: center;
   border: none;
   background: #fff;
-  box-shadow: 1px 1px 0px #999, 2px 2px 0px #999, 3px 2px 0px #999,
-    4px 4px 0px #999, 5px 5px 0px #999;
+  border-radius: 5px;
 }
 
 .op {
@@ -410,8 +381,7 @@ header {
 
 #center {
   width: 10px;
-
-  background: #fb6868;
+  background: #000000;
   margin: 10px;
   display: flex;
   justify-content: center;
@@ -421,9 +391,16 @@ header {
   font-weight: 500;
   width: 400px;
   margin: 10px auto;
+  padding: 30px;
 }
 
 #ans {
   font-weight: bold;
   color: #000;
+}
+
+h2,
+h3 {
+  color: white;
+  text-align: center;
 }

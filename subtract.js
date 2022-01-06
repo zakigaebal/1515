@@ -10,11 +10,15 @@ function Game() {
   var user = document.getElementById("intext2").value;
 
   if (user == subtract) {
-    document.getElementById("ans").innerHTML =
-      "Well Done! Your Answer is Correct";
+    document.getElementById("ans").innerHTML = "잘했어요!";
+    document.getElementById("ans").style.color = "blue";
+    setTimeout(function () {
+      $("#target").empty();
+    }, 1000);
   } else {
     document.getElementById("ans").innerHTML =
-      "Correct Answer " + subtract + " . Try Again";
+      "정답은 " + subtract + " 다시해보세요";
+    document.getElementById("ans").style.color = "red";
   }
 
   if (user == subtract) {
@@ -26,5 +30,7 @@ function Game() {
     document.getElementById("intext1").value = n2;
 
     subtract = n1 - n2;
+  } else {
+    var user = (document.getElementById("intext2").value = "");
   }
 }

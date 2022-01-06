@@ -8,13 +8,13 @@ let adds = n1 + n2;
 
 function Game() {
   var user = document.getElementById("intext2").value;
+  var ans = document.getElementById("ans").value;
 
   if (user == adds) {
-    document.getElementById("ans").innerHTML =
-      "Well Done! Your Answer is Correct";
+    document.getElementById("ans").innerHTML = "정답입니다!";
   } else {
     document.getElementById("ans").innerHTML =
-      "Correct Answer " + adds + " . Try Again";
+      "정답은 " + adds + " 다시해보세요";
   }
 
   if (user == adds) {
@@ -25,5 +25,7 @@ function Game() {
     document.getElementById("intext1").value = n2;
 
     adds = n1 + n2;
+  } else {
+    var user = (document.getElementById("intext2").value = "");
   }
 }
